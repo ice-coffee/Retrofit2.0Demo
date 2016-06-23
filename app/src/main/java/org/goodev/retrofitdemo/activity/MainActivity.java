@@ -1,8 +1,6 @@
-package org.goodev.retrofitdemo;
+package org.goodev.retrofitdemo.activity;
 
 import java.util.List;
-
-import org.goodev.retrofitdemo.GitHubClient.Contributor;
 
 import retrofit.Callback;
 import retrofit.Response;
@@ -11,6 +9,9 @@ import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import org.goodev.retrofitdemo.bean.Contributor;
+import org.goodev.retrofitdemo.httputil.GitHubClient;
 
 public class MainActivity extends ListActivity {
 
@@ -25,8 +26,7 @@ public class MainActivity extends ListActivity {
             @Override
             public void onResponse(Response<List<Contributor>> response, Retrofit retrofit)
             {
-                ArrayAdapter<Contributor> adapter = new ArrayAdapter<GitHubClient.Contributor>(getApplicationContext(),
-                    android.R.layout.simple_list_item_1, response.body());
+                ArrayAdapter<Contributor> adapter = new ArrayAdapter<Contributor>(getApplicationContext(), android.R.layout.simple_list_item_1, response.body());
                 mListView.setAdapter(adapter);
             }
 

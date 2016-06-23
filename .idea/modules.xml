@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Retrofit2.0Demo.iml" filepath="$PROJECT_DIR$/Retrofit2.0Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/retrofitDemo-studio.iml" filepath="$PROJECT_DIR$/retrofitDemo-studio.iml" />
     </modules>
   </component>
 </project>
